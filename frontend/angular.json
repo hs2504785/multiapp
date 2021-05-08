@@ -35,9 +35,6 @@
             "styles": [
               "projects/administration/src/styles.scss"
             ],
-            "stylePreprocessorOptions": {
-              "includePaths": ["styles"]
-            },
             "scripts": []
           },
           "configurations": {
@@ -163,9 +160,6 @@
             "styles": [
               "projects/demos/src/styles.scss"
             ],
-            "stylePreprocessorOptions": {
-              "includePaths": ["styles"]
-            },
             "scripts": []
           },
           "configurations": {
