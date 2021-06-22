@@ -1,7 +1,9 @@
 # Multiapp
 
 ## Advantages
+
 Here are some advantages of having multiple Angular apps in one project.
+
 1. A single source-control repository (E.g. git).
 2. Time-consuming — no need to run npm install for every app.
 3. Saving disk space by having a shared node_modules folder for all apps.
@@ -32,7 +34,23 @@ ng serve --project=administrations
 ng serve --project=demos
 ```
 
+## Build & Deploy
+
+```
+npm install -g angular-cli-ghpages
+ng build --base-href "https://hs2504785.github.io/multiapp/administration/"
+ng build --project=demos --base-href "https://hs2504785.github.io/multiapp/demos/"
+ngh --dir=dist --message="My deploy"
+```
+
+## Demos
+
+https://hs2504785.github.io/multiapp/administration/
+
+https://hs2504785.github.io/multiapp/demos/
+
 ## Feature
+
 - Workspace
 - 2 application
   - administration
@@ -42,7 +60,6 @@ ng serve --project=demos
   - vendors ( mat lib )
 - shared assets
 - shared scss
-
 
 # Angular Library
 
@@ -83,7 +100,6 @@ npm login
 cd dist/example-component-library
 npm publish
 ```
-
 
 ## Resources
 
